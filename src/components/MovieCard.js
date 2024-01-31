@@ -24,7 +24,6 @@ const MovieCard = ({ title, description, posterURL, rating }) => {
             <b>Description:</b> {description} <br />
             <b>Rating:</b> {rating} <br />
           </Card.Text>
-          {/* Adding a button to the Cards from ReactBootstrap */}
           <Button> WATCH </Button>
         </Card.Body>
       </Card>
@@ -33,3 +32,5 @@ const MovieCard = ({ title, description, posterURL, rating }) => {
 };
 
 export default MovieCard;
+
+
