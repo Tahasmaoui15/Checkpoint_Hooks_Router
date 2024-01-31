@@ -4,7 +4,7 @@ import Movies from './Movies';
 
 const MovieList = () => {
   return (
-    <div>
+    <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px", justifyContent: "center", marginTop:"5rem" }}>
         {Movies.map((movie, index) => (
            < MovieCard key={index} {...movie} />
         ))}

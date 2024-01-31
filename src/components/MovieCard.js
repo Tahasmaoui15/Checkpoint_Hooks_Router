@@ -4,24 +4,25 @@ import Button from "react-bootstrap/Button";
 
 const MovieCard = ({ title, description, posterURL, rating }) => {
   return (
-    <div>
+    <div >
       <Card
         style={{
           display: "flex",
           flexWrap: "wrap",
           width: "18rem",
           margin: "10px",
-          border: "2px solid",
+          border: "0.5px solid",
           borderRadius: "8px",
           cursor: "pointer",
+          height: "25rem"
         }}
       >
         <Card.Img variant="top" src={posterURL} />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>
-            Description: {description} <br />
-            Rating: {rating} <br />
+            <b>Description:</b> {description} <br />
+            <b>Rating:</b> {rating} <br />
           </Card.Text>
           {/* Adding a button to the Cards from ReactBootstrap */}
           <Button> WATCH </Button>
