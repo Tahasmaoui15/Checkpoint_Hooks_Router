@@ -8,10 +8,12 @@ const Filter = ({ onFilterChange }) => {
   };
 
   return (
-    <Form style={{ marginTop: "5rem", marginLeft: "75rem", marginRight:'3rem' }}>
+    <Form
+      style={{ marginTop: "5rem", marginLeft: "75rem", marginRight: "3rem" }}
+    >
       <Form.Group className="mb-3" controlId="filter">
-        <Form.Label style={{ fontWeight: "bolder", marginLeft:'0.5rem' }}>
-          Filter by Title or Rating
+        <Form.Label style={{ fontWeight: "bolder", marginLeft: "0.5rem" }}>
+          Filter by Title / Rating
         </Form.Label>
         <Form.Control
           type="text"

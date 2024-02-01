@@ -33,7 +33,7 @@ function App() {
     setShowAddMovieForm(false);
   };
   return (
-    <div className="App" style={{backgroundColor:'snow'}}>
+    <div className="App" style={{ backgroundColor: "snow" }}>
       <NavBar />
 
       <MovieList />
@@ -42,12 +42,13 @@ function App() {
         style={{
           padding: "0.5rem",
           marginTop: "5rem",
-          marginLeft: "5rem",
+          marginLeft: "40%",
           marginBottom: "2rem",
           backgroundColor: "#152238",
           color: "white",
           border: "none",
           borderRadius: "5px",
+          width:"20%"
         }}
       >
         + ADD MOVIE
@@ -67,9 +68,9 @@ function App() {
             borderRadius: "5px",
           }}
         >
-          <Form onSubmit={handleSubmit} style={{marginTop:'1rem'}}>
+          <Form onSubmit={handleSubmit} style={{ marginTop: "1rem" }}>
             <Form.Group className="mb-3" controlId="formMovieName">
-              <Form.Label>  Movie Name </Form.Label>
+              <Form.Label> Movie Name </Form.Label>
               <Form.Control type="text" placeholder="Enter movie name" />
             </Form.Group>
 
@@ -103,6 +104,13 @@ function App() {
           rating={movie.rating}
         />
       ))}
+
+<footer style={{ bottom: 0, width: '100%', backgroundColor: 'lightgray', textAlign: 'right', padding: '1px', color:'white', backgroundColor:'#152238' }}>
+  <p>
+    &copy; 2024 <b>TsMovies</b>. All rights reserved.
+  </p>
+</footer>
+
     </div>
   );
 }

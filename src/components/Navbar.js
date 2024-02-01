@@ -15,7 +15,14 @@ const NavBar = () => {
     <div>
       <Navbar bg="dark" data-bs-theme="dark" fixed="top">
         <Container>
-          <Navbar.Brand onClick={scrollToTop} style={{ cursor: "pointer", fontWeight:'bolder', fontSize:'25px' }}>
+          <Navbar.Brand
+            onClick={scrollToTop}
+            style={{
+              cursor: "pointer",
+              fontWeight: "bolder",
+              fontSize: "25px",
+            }}
+          >
             TsMovies
           </Navbar.Brand>
           <Nav className="me-auto" style={{ marginLeft: "65%" }}>
