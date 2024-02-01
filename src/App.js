@@ -21,6 +21,11 @@ function App() {
     const posterURL = event.target.elements.formPosterURL.value;
     const description = event.target.elements.formDescription.value;
 
+    if (!movieName || !posterURL || !description) {
+      alert("Please fill in all fields to add a new movie.");
+      return;
+    }
+
     const newMovie = {
       title: movieName,
       posterURL: posterURL,
@@ -48,7 +53,7 @@ function App() {
           color: "white",
           border: "none",
           borderRadius: "5px",
-          width:"20%"
+          width: "20%",
         }}
       >
         + ADD MOVIE
@@ -105,12 +110,21 @@ function App() {
         />
       ))}
 
-<footer style={{ bottom: 0, width: '100%', backgroundColor: 'lightgray', textAlign: 'right', padding: '1px', color:'white', backgroundColor:'#152238' }}>
-  <p>
-    &copy; 2024 <b>TsMovies</b>. All rights reserved.
-  </p>
-</footer>
-
+      <footer
+        style={{
+          bottom: 0,
+          width: "100%",
+          backgroundColor: "lightgray",
+          textAlign: "right",
+          padding: "1px",
+          color: "white",
+          backgroundColor: "#152238",
+        }}
+      >
+        <p>
+          &copy; 2024 <b>TsMovies</b>. All rights reserved.
+        </p>
+      </footer>
     </div>
   );
 }
