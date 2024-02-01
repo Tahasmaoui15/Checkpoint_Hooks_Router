@@ -28,13 +28,14 @@ function App() {
       rating: 0,
     };
 
-    setMovies([...movies, newMovie])
+    setMovies([...movies, newMovie]);
 
     setShowAddMovieForm(false);
   };
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor:'snow'}}>
       <NavBar />
+
       <MovieList />
       <button
         onClick={handleAddMovie}
@@ -66,9 +67,9 @@ function App() {
             borderRadius: "5px",
           }}
         >
-          <Form onSubmit={handleSubmit}>
+          <Form onSubmit={handleSubmit} style={{marginTop:'1rem'}}>
             <Form.Group className="mb-3" controlId="formMovieName">
-              <Form.Label>Movie Name</Form.Label>
+              <Form.Label>  Movie Name </Form.Label>
               <Form.Control type="text" placeholder="Enter movie name" />
             </Form.Group>
 
