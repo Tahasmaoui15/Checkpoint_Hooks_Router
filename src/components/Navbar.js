@@ -18,7 +18,7 @@ const NavBar = () => {
           <Navbar.Brand onClick={scrollToTop} style={{ cursor: "pointer" }}>
             TsMovies
           </Navbar.Brand>
-          <Nav className="me-auto">
+          <Nav className="me-auto" style={{marginLeft:'65%'}}>
             <Nav.Link onClick={scrollToTop}>Home</Nav.Link>
             <Nav.Link href="#features">Trending</Nav.Link>
             <Nav.Link href="#pricing">Box Office</Nav.Link>

@@ -41,7 +41,7 @@ function App() {
         style={{
           padding: "0.5rem",
           marginTop: "5rem",
-          marginLeft: "50rem",
+          marginLeft: "5rem",
           marginBottom: "2rem",
           backgroundColor: "#152238",
           color: "white",

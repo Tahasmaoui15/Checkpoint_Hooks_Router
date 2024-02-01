@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
 const MovieCard = ({ title, description, posterURL, rating }) => {
+    const handleClick= () => alert (`${title} will be available soon.`)
   return (
     <div >
       <Card
@@ -24,7 +25,7 @@ const MovieCard = ({ title, description, posterURL, rating }) => {
             <b>Description:</b> {description} <br />
             <b>Rating:</b> {rating} <br />
           </Card.Text>
-          <Button> WATCH </Button>
+          <Button onClick={handleClick}> WATCH </Button>
         </Card.Body>
       </Card>
     </div>
