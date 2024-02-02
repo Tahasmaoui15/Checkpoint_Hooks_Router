@@ -73,6 +73,21 @@ function App() {
             borderRadius: "5px",
           }}
         >
+          {/* Adding an 'x' icon to close the form */}
+          <button
+            onClick={() => setShowAddMovieForm(false)}
+            style={{
+              position: "absolute",
+              top: "10px",
+              right: "10px",
+              backgroundColor: "transparent",
+              border: "none",
+              cursor: "pointer",
+            }}
+          >
+            <span style={{ fontSize: "1.5rem" }}>&times;</span>
+          </button>
+
           <Form onSubmit={handleSubmit} style={{ marginTop: "1rem" }}>
             <Form.Group className="mb-3" controlId="formMovieName">
               <Form.Label> Movie Name </Form.Label>
