@@ -7,19 +7,12 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 const MovieCard = ({ title, description, posterURL, rating, trailerURL }) => {
   const handleClick = () => alert(`${title} will be available soon.`);
 
-  const handleWatchTrailer = () => {
-    if (trailerURL) {
-      window.open(trailerURL, "_blank");
-    } else {
-      alert(`No trailer available for ${title}.`);
-    }
-  };
-
   return (
     <div style={{ display: "flex", justifyContent: "space-around" }}>
       <Card
         style={{
           width: "22rem",
+          height:"48rem",
           border: "1px solid #ddd",
           borderRadius: "10px",
           overflow: "hidden",
@@ -40,8 +33,8 @@ const MovieCard = ({ title, description, posterURL, rating, trailerURL }) => {
             />{" "}
             <br />
           </Card.Text>
-          <div style={{ display: "flex", justifyContent: "center", position: "absolute", bottom: 10, left: 0, right: 0  }}>
-            <Button onClick={handleWatchTrailer} style={{ fex:1, marginLeft: "5px" }}>
+          <div style={{ display: "flex", justifyContent: "center", position: "absolute", bottom:5, left: 0, right: 5  }}>
+            <Button style={{ fex:1, marginLeft: "5px" }}>
               WATCH TRAILER
             </Button>
             <Button onClick={handleClick} style={{ flex: 1, marginLeft: "5px" }}>
