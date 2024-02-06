@@ -6,6 +6,7 @@ const Movies = [
     posterURL:
       "https://www.movieposters.com/cdn/shop/products/97b11eee3160ba9d71ba657d79e29a38_90dec42c-668b-4662-a0a6-95801e432dae_480x.progressive.jpg?v=1573590358",
     rating: "2.5",
+    trailerLink:"https://www.youtube.com/watch?v=u2lGqZ3Ouas"
   },
 
   {
@@ -15,6 +16,7 @@ const Movies = [
     posterURL:
       "https://www.movieposters.com/cdn/shop/products/7eda7d058cc637169abb122d4b8f1228_23b02d7c-29ae-4f14-b1ec-f05d380300eb_480x.progressive.jpg?v=1573652592",
     rating: "3.5",
+    trailerLink:"https://www.youtube.com/watch?v=1cnoM8EiGGU"
   },
 
   {
@@ -24,6 +26,7 @@ const Movies = [
     posterURL:
       "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/4940c5878babf3dc5d2ca567b7558178_9e62fc4c-4116-48e5-a4f5-3a99c73ae7b1_500x749.jpg?v=1573651499",
     rating: "3",
+    trailerLink:"https://www.youtube.com/watch?v=UinsNBOTNyU"
   },
 
   {
@@ -33,6 +36,7 @@ const Movies = [
     posterURL:
       "https://www.movieposters.com/cdn/shop/products/pulpfiction.2436_480x.progressive.jpg?v=1620048742",
     rating: "5",
+    trailerLink:"https://www.youtube.com/watch?v=tGpTpVyI_OQ"
   },
 
   {
@@ -42,6 +46,7 @@ const Movies = [
     posterURL:
       "https://www.movieposters.com/cdn/shop/products/dd43b3a44eacfd9ff0a3d97b311d17d2_b4766a06-e1c1-421d-acdb-3adae5c2c645_480x.progressive.jpg?v=1573652567",
     rating: "2.5",
+    trailerLink:"https://www.youtube.com/watch?v=S7OWoc-j8qQ"
   },
 
   {
@@ -51,6 +56,7 @@ const Movies = [
     posterURL:
       "https://www.movieposters.com/cdn/shop/products/b5282f72126e4919911509e034a61f66_6ce2486d-e0da-4b7a-9148-722cdde610b8_480x.progressive.jpg?v=1573616025",
     rating: "5",
+    trailerLink:"https://www.youtube.com/watch?v=UaVTIH8mujA"
   },
 
   {
@@ -60,6 +66,7 @@ const Movies = [
     posterURL:
       "https://www.movieposters.com/cdn/shop/products/inglourious-basterds-style4_37d01d94-318d-4840-a290-6fc5aa7b8072_480x.progressive.jpg?v=1615396029",
     rating: "4.5",
+    trailerLink:"https://www.youtube.com/watch?v=-2cRY4p7KIk"
   },
 
   {
@@ -69,6 +76,7 @@ const Movies = [
     posterURL:
       "https://www.movieposters.com/cdn/shop/files/dark_knight_ver5_480x.progressive.jpg?v=1692579075",
     rating: "4.5",
+    trailerLink:"https://www.youtube.com/watch?v=_PZpmTj1Q8Q"
   },
 
   {
@@ -78,6 +86,7 @@ const Movies = [
     posterURL:
       "https://www.movieposters.com/cdn/shop/products/bd0f30ecb2cb52e660d9f186f1e2a0cf_86cbdbd2-70f5-4827-96f8-2773689ad27e_480x.progressive.jpg?v=1573652345",
     rating: "3.5",
+    trailerLink:"https://www.youtube.com/watch?v=DMOBlEcRuw8"
   },
 
   {
@@ -87,6 +96,7 @@ const Movies = [
     posterURL:
       "https://www.movieposters.com/cdn/shop/files/scan_f48bfe00-c291-441c-8bcb-63abbe283fed_480x.progressive.jpg?v=1688653768",
     rating: "4",
+    trailerLink:"https://www.youtube.com/watch?v=m8e-FF8MsqU"
   },
 
   {
@@ -96,6 +106,7 @@ const Movies = [
     posterURL:
       "https://www.movieposters.com/cdn/shop/products/2300c0258501297acf11acf055321423_480x.progressive.jpg?v=1573572641",
     rating: "4",
+    trailerLink:"https://www.youtube.com/watch?v=vREl66xmXsE"
   },
 
   {
@@ -105,6 +116,7 @@ const Movies = [
     posterURL:
       "https://www.movieposters.com/cdn/shop/products/89bf74b3f600774f9d9072b36e27d4b5_07564e66-b867-4073-b8eb-a54d1337f096_480x.progressive.jpg?v=1573587254",
     rating: "4",
+    trailerLink:"https://www.youtube.com/watch?v=71rDQ7z4eFg"
   },
 ];
 
