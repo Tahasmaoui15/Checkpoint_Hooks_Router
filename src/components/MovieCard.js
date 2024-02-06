@@ -4,8 +4,16 @@ import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
-const MovieCard = ({ title, description, posterURL, rating }) => {
+const MovieCard = ({ title, description, posterURL, rating, trailerURL }) => {
   const handleClick = () => alert(`${title} will be available soon.`);
+
+  const handleWatchTrailer = () => {
+    if (trailerURL) {
+      window.open(trailerURL, "_blank");
+    } else {
+      alert(`No trailer available for ${title}.`);
+    }
+  };
 
   return (
     <div style={{ display: "flex", justifyContent: "space-around" }}>
@@ -18,7 +26,7 @@ const MovieCard = ({ title, description, posterURL, rating }) => {
           boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
         }}
       >
-        <Card.Img variant="top" src={posterURL} />
+        <Card.Img variant="top" src={posterURL} alt={`Poster for ${title}`} />
         <Card.Body>
           <Card.Title style={{ fontWeight: "bolder", marginBottom: "10px" }}>
             {title}
@@ -32,10 +40,14 @@ const MovieCard = ({ title, description, posterURL, rating }) => {
             />{" "}
             <br />
           </Card.Text>
-          <Button onClick={handleClick} style={{ marginTop: "10px" }}>
-            {" "}
-            WATCH{" "}
-          </Button>
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <Button onClick={handleWatchTrailer} style={{ marginLeft: "5px" }}>
+              WATCH TRAILER
+            </Button>
+            <Button onClick={handleClick} style={{ marginLeft: "5px" }}>
+              WATCH MOVIE
+            </Button>
+          </div>
         </Card.Body>
       </Card>
     </div>
