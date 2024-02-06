@@ -40,11 +40,11 @@ const MovieCard = ({ title, description, posterURL, rating, trailerURL }) => {
             />{" "}
             <br />
           </Card.Text>
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <Button onClick={handleWatchTrailer} style={{ marginLeft: "5px" }}>
+          <div style={{ display: "flex", justifyContent: "center", position: "absolute", bottom: 10, left: 0, right: 0  }}>
+            <Button onClick={handleWatchTrailer} style={{ fex:1, marginLeft: "5px" }}>
               WATCH TRAILER
             </Button>
-            <Button onClick={handleClick} style={{ marginLeft: "5px" }}>
+            <Button onClick={handleClick} style={{ flex: 1, marginLeft: "5px" }}>
               WATCH MOVIE
             </Button>
           </div>

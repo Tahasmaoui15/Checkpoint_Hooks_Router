@@ -2,7 +2,7 @@ const Movies = [
   {
     title: "A Beautiful Mind",
     description:
-      "The film is driven by the agonizing conflict between Nash's mathematical brilliance and the paranoid schizophrenia which almost destroys both his career and his marriage to Alicia Larde",
+      "The film is driven by the agonizing conflict between Nash's mathematical brilliance and the paranoid schizophrenia which almost destroys both his career and his marriage.",
     posterURL:
       "https://www.movieposters.com/cdn/shop/products/97b11eee3160ba9d71ba657d79e29a38_90dec42c-668b-4662-a0a6-95801e432dae_480x.progressive.jpg?v=1573590358",
     rating: "2.5",
